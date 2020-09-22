@@ -14,7 +14,7 @@ $(document).ready(function () {
             {
                 code: "ar",
                 displayName: "العربية",
-                // direction: LanguageDirection.rtl
+                direction: LanguageDirection.rtl
             }
         ]
     });
