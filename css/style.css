@@ -2,12 +2,13 @@ body{
     overflow-x: hidden;
     width: 100vw;
     direction:ltr;
-
+    font-family: 'Cairo', sans-serif;
 }
 body:lang(ar) 	{
     width: 100vw;
     overflow-x: hidden;
     direction:rtl;
+    font-family: 'Almarai', sans-serif;
 
     }
     .image-slider {
