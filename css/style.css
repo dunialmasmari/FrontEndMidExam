@@ -1,10 +1,24 @@
 body{ 
+    overflow-x: hidden;
     width: 100vw;
+    direction:ltr;
+
 }
 body:lang(ar) 	{
     width: 100vw;
     overflow-x: hidden;
+    direction:rtl;
+
     }
+    .image-slider {
+    direction:ltr;
+
+    }
+    .image-slider:lang(ar) {
+      direction:ltr;
+
+  
+      }
     .navbg{
         height: 50px;
         padding:0;
@@ -291,9 +305,18 @@ footer{
 }
 .handimg {
         display: block;
-    min-height:90vh ;
+        min-height:70% ;
+        height:70%;
 
     }
+    footer{
+      height:23vh;
+    }
+}
+@media only screen and (min-width:912px){
+  footer{
+    height:35vh;
+  }
 }
 @media only screen and (min-width:992px)
 {
@@ -306,6 +329,9 @@ footer{
     min-height:70% ;
     height:70%;
 }
+footer{
+  height:35vh;
+}
 }
 @media only screen and (min-width:1200px)
 {
@@ -317,5 +343,8 @@ footer{
     height:70%;
     min-height:70% ;
     display: block;
+}
+footer{
+  height:35vh;
 }
 }

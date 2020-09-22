@@ -12,21 +12,9 @@ $(document).ready(function () {
                 displayName: "English"
             },
             {
-                code: "es",
-                displayName: "Spanish"
-            },
-            {
-                code: "fr",
-                displayName: "Français"
-            },
-            {
-                code: "fr-ca",
-                displayName: "Français (Canada)"
-            },
-            {
                 code: "ar",
                 displayName: "العربية",
-                direction: LanguageDirection.rtl
+                // direction: LanguageDirection.rtl
             }
         ]
     });
