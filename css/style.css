@@ -1,3 +1,6 @@
+html{
+  width:100%;
+}
 body{ 
     overflow-x: hidden;
     width: 100vw;
@@ -11,6 +14,7 @@ body:lang(ar) 	{
     font-family: 'Almarai', sans-serif;
 
     }
+    
     .image-slider {
     direction:ltr;
 
@@ -28,8 +32,8 @@ body:lang(ar) 	{
         background-position: 50%;
     }
 .productcard{
-    width: 19%;
-    height:30vh;
+    width: 238px;
+    height:250px;
 }
 .fixed {
     position: fixed;
@@ -97,9 +101,16 @@ footer{
     margin: 0 5px;
     margin-top: 7px;
   }
+  /* .slick-track{
+    width:90vw ;
+    height:60vh !important;
+  }
+  .slick-slide div{
+    width:90vw ;
+    height:70vh !important;
+  } */
   .slick-slide .slide-image {
     opacity: 0;
-    height: 100%;
     /* //background-size: cover; */
     /* background-position: center;
     -webkit-transition: all .8s ease;
@@ -213,7 +224,7 @@ footer{
   }
   
 .image-slider{
-    width:80vw;
+    width:90vw;
     height:60vh;
     margin: 0px;
     padding: 0px;
@@ -272,9 +283,9 @@ footer{
 @media only screen and (max-width:400px)
 
 {
-    .productcard{
+    /* .productcard{
         width: 70%;
-    }
+    } */
     .handimg {
         display: none;
     }
@@ -282,28 +293,28 @@ footer{
 @media only screen and (min-width:400px)
 
 {
-    .productcard{
+    /* .productcard{
         width: 49%;
-    }
+    } */
     .handimg {
         display: none;
     }
 }
 @media only screen and (min-width:600px)
 {
-    .productcard{
+    /* .productcard{
         width: 32%;
-    }
+    } */
     .handimg {
         display: none;
     }
 }
 @media only screen and (min-width:768px)
 {
-     
+/*      
 .productcard{
     width: 24%;
-}
+} */
 .handimg {
         display: block;
         min-height:70% ;
@@ -321,10 +332,10 @@ footer{
 }
 @media only screen and (min-width:992px)
 {
-    
+/*     
 .productcard{
     width: 24%;
-}
+} */
 .handimg {
     display: block;
     min-height:70% ;
@@ -336,10 +347,10 @@ footer{
 }
 @media only screen and (min-width:1200px)
 {
-  
+/*   
 .productcard{
     width: 19%;
-}
+} */
 .handimg {
     height:70%;
     min-height:70% ;

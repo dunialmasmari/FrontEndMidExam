@@ -18,7 +18,31 @@ $(document).ready(function () {
             }
         ]
     });
+    $('#flagul li').click(function(){
+        console.log($(this).children('img').attr('src'))
+        var x=$(this).children('img').attr('src')
+        console.log($('#flagbtn img').attr('src'))
+        $('#flagbtn img').attr('src',x)
+        var city;
+        if( $('#flagbtn img').attr('src')=='./images/yf.png'){
+            city = ["select","Aden", "Sana'a"];
+        }
+        if($('#flagbtn img').attr('src') =='./images/eflag.png'){
+            city = ["select","Cairo", "Alexandria"];
+        }
+        if($('#flagbtn img').attr('src') =='./images/gflag.png'){
+            city = ["select","Berlin", "Frankfurt"];
+        }
+        //cities
+        $('.cities').children().remove().end()
 
+        city.forEach(element => {
+            var o = new Option("option text", "value");
+/// jquerify the DOM object 'o' so we can use the html method
+$(o).html(element);
+$(".cities").append(o);
+        });
+     });
     $(window).scroll(function(){
         var sticky = $('.sticky'),
             scroll = $(window).scrollTop();
