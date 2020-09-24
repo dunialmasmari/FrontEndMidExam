@@ -66,7 +66,6 @@ $(".cities").append(o);
             autoplay: true,
             arrows: true,
             autoplaySpeed: 3000,
-            adaptiveHeight: true,
             prevArrow: '<button class="slide-arrow imgarow prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
             nextArrow: '<button class="slide-arrow imgarow next-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
         });
@@ -77,10 +76,11 @@ $(".cities").append(o);
         //select box
         categories_slider.slick({
             dots: false,
-            infinite: false,
+            infinite: true,
             speed: 300,
             slidesToShow: 7,
             slidesToScroll: 7,
+            arrows: true,
             prevArrow: '<button class="slide-arrow imgarow cprev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
             nextArrow: '<button class="slide-arrow imgarow cnext-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
             responsive: [
@@ -89,8 +89,6 @@ $(".cities").append(o);
                     settings: {
                         slidesToShow: 5,
                         slidesToScroll: 5,
-                        infinite: false,
-                        dots: false
                     }
                 },
                 {
@@ -98,19 +96,18 @@ $(".cities").append(o);
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3,
-                        infinite: false,
                         dots: false
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 510,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 340,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1

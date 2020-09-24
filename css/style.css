@@ -24,6 +24,15 @@ body:lang(ar) 	{
 
   
       }
+      .categories-slider {
+        direction:ltr;
+    
+        }
+        .categories-slider:lang(ar) {
+          direction:ltr;
+    
+      
+          }
     .navbg{
       height: 55px;
         padding:0;
@@ -119,6 +128,18 @@ footer{
     /* background-position: center;
     -webkit-transition: all .8s ease;
     transition: all .8s ease; */
+  }
+  .categories-slider {
+    height:150px !important;
+} 
+  .categories-slider .slick-slide{
+    width:150px !important;
+
+  }
+  .categories-slider .slick-slide .card{
+    height:140px;
+    width:130px;
+
   }
   .slick-dots {
     text-align: center;
