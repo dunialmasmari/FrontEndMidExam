@@ -25,11 +25,11 @@ body:lang(ar) 	{
   
       }
     .navbg{
-        height: 50px;
+      height: 55px;
         padding:0;
         background-size: cover;
         background-image: url('../images/nav.png'); 
-        background-position: 50%;
+        background-position: 100%;
     }
 .productcard{
     width: 238px;
@@ -71,6 +71,8 @@ footer{
     position: absolute;
     background-image: url('../images/1.png');
     width:100%;
+    height: -webkit-fill-available ;
+    bottom: 0;
     right:0;
     margin: 0;
   z-index: 2;
@@ -83,7 +85,9 @@ footer{
         position: absolute;
         background-image: url('../images/1.png');
         width:100%;
-        left:0;
+        height: -webkit-fill-available ;
+         bottom: 0;
+        left:50px;
         margin: 0;
       z-index: 2;
         background-size: contain;
@@ -305,12 +309,15 @@ footer{
     /* .productcard{
         width: 32%;
     } */
-    .handimg {
+    /* .handimg {
         display: none;
-    }
+    } */
 }
 @media only screen and (min-width:768px)
 {
+  .handimg:lang(ar) {
+    left:0px;
+  }
 /*      
 .productcard{
     width: 24%;
@@ -321,14 +328,17 @@ footer{
         height:70%;
 
     }
-    footer{
+    /* footer{
       height:23vh;
-    }
+    } */
 }
 @media only screen and (min-width:912px){
-  footer{
-    height:35vh;
+  .handimg:lang(ar) {
+    left:50px;
   }
+  /* footer{
+    height:35vh;
+  } */
 }
 @media only screen and (min-width:992px)
 {
@@ -341,9 +351,9 @@ footer{
     min-height:70% ;
     height:70%;
 }
-footer{
+/* footer{
   height:35vh;
-}
+} */
 }
 @media only screen and (min-width:1200px)
 {
@@ -356,7 +366,7 @@ footer{
     min-height:70% ;
     display: block;
 }
-footer{
+/* footer{
   height:35vh;
-}
+} */
 }

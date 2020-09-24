@@ -18,12 +18,12 @@
         href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Hello, world!</title>
+    <title>Ecommerce</title>
 </head>
 
 <body>
     <header>
-        <div class="row">
+        <div class="row px-0 mx-0">
             <div class=" mx-2">
                 <img width="100%" src="./images/2.png" />
             </div>
@@ -83,43 +83,42 @@
 
 
 
-        <nav class="navbar  sticky justify-content-center navbar-expand-lg navbar-dark navbg ">
-            <div
-                style="background-color: rgba(0, 0, 0, 0.329); width: 100%; margin-right:0; margin-left:0; height:100%">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse justify-content-center  navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav  center">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><i class="fa fa-home "></i><span class="mx-2">Home</span> <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-list "></i><span
-                                    class="mx-2">categories</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-store "></i><span
-                                    class="mx-2">stores</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-tags"></i><span class="mx-2">special
-                                    offers</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-id-badge"></i><span class="mx-2">who we
-                                    are</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-address-card "></i><span class="mx-2">contact
-                                    us</span></a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="navbg  sticky">
+        <nav class="navbar navbar-expand-lg navbar-dark  " style="background-color: rgba(0, 0, 0, 0.692); z-index:999;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-home "></i><span class="mx-2">Home</span> <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-list "></i><span
+                            class="mx-2">categories</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-store "></i><span
+                            class="mx-2">stores</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-tags"></i><span class="mx-2">special
+                            offers</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-id-badge"></i><span class="mx-2">who we
+                            are</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-address-card "></i><span class="mx-2">contact
+                            us</span></a>
+                </li>
+              </ul>
             </div>
-        </nav>
+          </nav>
+        </div>
     </header>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -562,8 +561,8 @@
 
     <!--Footer-->
     <!--Footer-->
-    <footer class="text-center row" style="width: 100%;  ">
-
+    <footer class="text-center row" style="width: 100%; ">
+        <div style="height: auto; width: 100%; position: relative;">
         <div class=" col-md-9 px-0  ">
             <div class=""
                 style="position: absolute; z-index: -3; background-repeat: no-repeat; background-size:cover; background-image: url('./images/8.jpg');  height:100%; width:100vw;">
@@ -627,12 +626,12 @@
 
             </div>
         </div>
-        <div class="col-md-9 px-0 py-0 h-100 ">
+        <div class="col-md-9 px-0 py-0  " >
             <div class=""
                 style="position: absolute; z-index: -1; background-repeat: no-repeat; background-size:cover; background-image: url('./images/5.jpg'); height:100%; width:100vw;">
 
             </div>
-            <div class="row container mx-auto d-flex justify-content-center">
+            <div class="row container mx-auto d-flex justify-content-center" style="z-index:999">
                 <div class="card justify-center mx-2 my-auto h-75"
                     style="border:0; background-color: rgba(255, 255, 255, 0);">
                     <img height="100%" width="100%" class=" mx-auto" src="./images/2.png" />
@@ -653,6 +652,7 @@
             </div>
 
         </div>
+    </div>
     </footer>
     <!--/.Footer-->
     <!-- Optional JavaScript -->
